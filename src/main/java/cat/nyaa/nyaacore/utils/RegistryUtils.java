@@ -8,13 +8,14 @@ import org.jetbrains.annotations.Nullable;
 public class RegistryUtils {
     public static int getMenuId(Object obj) {
         if (obj instanceof MenuType<?>) {
-            return Registry.MENU.getId((MenuType<?>) obj);
+            //return Registry.MENU.getId((MenuType<?>) obj);
         }
         throw new IllegalArgumentException("wrong parameter type");
     }
 
     public static Object getMenuTypeById(int id) {
-        return Registry.MENU.byId(id);
+        //return Registry.MENU.byId(id);
+        return null;
     }
 
     <T> int getId(@NotNull Registry<T> registry, @NotNull T object) {

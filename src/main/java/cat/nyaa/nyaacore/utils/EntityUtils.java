@@ -26,7 +26,8 @@ public class EntityUtils {
     }
 
     public static Optional<Integer> getEntityTypeId(org.bukkit.entity.EntityType bukkitEntityType) {
-        return getNmsEntityTypes(bukkitEntityType).map(Registry.ENTITY_TYPE::getId);
+        //return getNmsEntityTypes(bukkitEntityType).map(org.bukkit.Registry.ENTITY_TYPE.getId);
+        return null;
     }
 
     public static int getUpdateInterval(org.bukkit.entity.EntityType bukkitEntityType) {
